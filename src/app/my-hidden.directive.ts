@@ -1,7 +1,7 @@
 import { Directive, ElementRef, Renderer } from '@angular/core';
 
 @Directive({
-  selector: '[appMyHidden]'
+  selector: '[my-hidden]'
 })
 export class MyHiddenDirective {
 
