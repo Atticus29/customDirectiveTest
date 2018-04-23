@@ -36,15 +36,48 @@ export class PointsDisplayComponent implements OnInit {
 
         //assume your database service takes care of filtering and mapping and returns an array of whatever (strings in our case)
         this.data = ["rear naked choke", "rear naked choke", "rear naked choke", "flower sweep", "scissor sweep", "double leg", "armbar", "armbar", "bow-and-arrow choke", "kiumra"];
+        let svg = d3.select("body")
+          .append("svg")
+          .append("g");
+
+        svg.append("g")
+          .attr("class", "slices");
+        svg.append("g")
+          .attr("class", "labels");
+        svg.append("g")
+          .attr("class", "lines");
+
+        let width = 960,
+          height = 450,
+          radius = Math.min(width, height)/2;
+
+        var pie = d3.layout.pie()
+          .sort(null)
+          .value(function(d) {
+            return d.value;
+          });
+
+        var arc = d3.svg.arc()
+          .outerRadius(radius * 0.8)
+          .innerRadius(radius * 0.4);
+
+        var outerArc = d3.svg.arc()
+          .innerRadius(radius * 0.9)
+          .outerRadius(radius * 0.9);
+
+        svg.attr("transform", "translate(" + width /2 + "," + height /2 +")");
+
+        var key = function(d) { return d.data.label;};
+
+        function onlyUnique(value, index, self) {
+            return self.indexOf(value) === index;
+        }
+
+        var color = d3.scale.ordinal()
+          .domain(this.data.filter(onlyUnique))
+          .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
       }
     );
-
-    let d3ParentElement: Selection<any, any, any, any>;
-    if (this.parentNativeElement !== null) {
-      d3ParentElement = d3.select(this.parentNativeElement); // <-- use the D3 select method
-      let test = d3.select('body').append('svg');
-      // Do more D3 things
-    }
   }
 
 }
