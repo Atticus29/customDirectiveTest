@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { PointsScoredDirective } from './points-scored.directive';
@@ -17,7 +17,8 @@ import { PointsDisplayComponent } from './points-display/points-display.componen
     PointsDisplayComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [D3Service],
   bootstrap: [AppComponent]
