@@ -29,7 +29,7 @@ export class PointsDisplayComponent implements OnInit {
         //   return entry.matchDeets;
         // });
         // console.log(deets);
-        // let tournamentNames = data['matches'].filter(entry => {
+        // let tournamentNames = data['matches'].map(entry => {
         //   console.log(entry);
         //   // entry.'matchDeets'
         // });
@@ -71,13 +71,33 @@ export class PointsDisplayComponent implements OnInit {
 
         function onlyUnique(value, index, self) {
             return self.indexOf(value) === index;
-        }
+        };
 
         var color = d3.scale.ordinal()
           .domain(this.data.filter(onlyUnique))
           .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+
+          function getData(){
+            let labels = color.domain();
+            return labels.map(function(label){
+              return {label: label, value: getCount(label, data)}
+            });
+          }
+
+          function getCount(label:string, data: string[]){
+            var counts = {};
+            for (var i = 0; i < data.length; i++) {
+              var num = data[i];
+              counts[num] = counts[num] ? counts[num] + 1 : 1;
+            }
+            return counts[label];
+          }
       }
     );
   }
+
+
+
+
 
 }
