@@ -26,12 +26,12 @@ export class PointsDisplayComponent implements OnInit {
         matches: data['matches']
       });
     console.log(this.data);
-    let d3ParentElement: Selection<any, any, any, any>;
-    if (this.parentNativeElement !== null) {
-      d3ParentElement = d3.select(this.parentNativeElement); // <-- use the D3 select method
-      let test = d3.select('body').append('svg');
-      // Do more D3 things
-    }
+    // let d3ParentElement: Selection<any, any, any, any>;
+    // if (this.parentNativeElement !== null) {
+    //   d3ParentElement = d3.select(this.parentNativeElement); // <-- use the D3 select method
+    //   let test = d3.select('body').append('svg');
+    //   // Do more D3 things
+    // }
   }
 
 }

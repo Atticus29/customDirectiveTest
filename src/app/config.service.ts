@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpResponse } from '@angular/common/http';
+import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 export class ConfigService {
@@ -7,7 +8,7 @@ export class ConfigService {
 
   constructor(private http: HttpClient) { }
 
-  getConfig(){
-    return this.http.get(this.dataUrl);
+  getConfig(): Observable<HttpResponse>{
+    return this.http.get(this.dataUrl, {observe: 'response'});
   }
 }
