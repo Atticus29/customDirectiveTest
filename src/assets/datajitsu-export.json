@@ -1,0 +1,104 @@
+{
+  "ageClasses" : {
+    "-L0pi8zkPJlMAVcajhuX" : "Youth",
+    "-L0pi8zkPJlMAVcajhuY" : "Juvenile1",
+    "-L0pi8zkPJlMAVcajhuZ" : "Juvenile2",
+    "-L0pi8zkPJlMAVcajhu_" : "Adult",
+    "-L0pi8zl8IfWvoKxk-Oi" : "Master 1",
+    "-L0pi8zl8IfWvoKxk-Oj" : "Master 2",
+    "-L0pi8zmWzqw1D3Y0rkg" : "Master 3",
+    "-L0pi8zmWzqw1D3Y0rkh" : "Master 4",
+    "-L0pi8zmWzqw1D3Y0rki" : "Master 5",
+    "-L0pi8zmWzqw1D3Y0rkj" : "Master 6",
+    "-L0pi8znmt4xCrSNR7jz" : "Add new age class"
+  },
+  "giRanks" : {
+    "-L0pi8znmt4xCrSNR7k-" : "White belt",
+    "-L0pi8zoK7-ysM9b-GVD" : "Grey belt",
+    "-L0pi8zoK7-ysM9b-GVE" : "Yellow belt",
+    "-L0pi8zoK7-ysM9b-GVF" : "Orange belt",
+    "-L0pi8zpSATBAXzaLIdv" : "Green belt",
+    "-L0pi8zpSATBAXzaLIdw" : "Blue belt",
+    "-L0pi8zpSATBAXzaLIdx" : "Purple belt",
+    "-L0pi8zpSATBAXzaLIdy" : "Brown belt",
+    "-L0pi8zpSATBAXzaLIdz" : "Black belt",
+    "-L0pi8zq6L-xEM8JgtjO" : "Add new gi rank"
+  },
+  "matches" : {
+    "-L4U9Q5eMV22RyjCoPHf" : {
+      "id" : "-L4U9Q5eMV22RyjCoPHf",
+      "matchDeets" : {
+        "ageClass" : "Youth",
+        "annotationRating" : 0,
+        "athlete1Name" : "a",
+        "athlete2Name" : "b",
+        "gender" : "Female",
+        "giStatus" : false,
+        "location" : "d",
+        "matchRating" : 0,
+        "rank" : "Beginner",
+        "tournamentName" : "c",
+        "videoUrl" : "https://youtu.be/dzVF_uXk3EY",
+        "weightClass" : "Rooster"
+      },
+      "originalPosterId" : "-L4U7tTbG1hsveSV3gma"
+    },
+    "-L5qZYGOj_Lq5rHmxvjx" : {
+      "id" : "-L5qZYGOj_Lq5rHmxvjx",
+      "matchDeets" : {
+        "ageClass" : "Youth",
+        "annotationRating" : 0,
+        "athlete1Name" : "alpha",
+        "athlete2Name" : "beta",
+        "gender" : "Female",
+        "giStatus" : false,
+        "location" : "mom",
+        "matchRating" : 0,
+        "rank" : "Elite",
+        "tournamentName" : "your",
+        "videoUrl" : "https://www.youtube.com/watch?v=txDR1y1drl0",
+        "weightClass" : "Rooster"
+      },
+      "originalPosterId" : "-L4U7tTbG1hsveSV3gma"
+    }
+  },
+  "noGiRanks" : {
+    "-L0pi8zq6L-xEM8JgtjP" : "Beginner",
+    "-L0pi8zq6L-xEM8JgtjQ" : "Intermediate",
+    "-L0pi8zq6L-xEM8JgtjR" : "Advanced",
+    "-L0pi8zrzVHHkc7wKp63" : "Elite",
+    "-L0pi8zrzVHHkc7wKp64" : "Add new no gi rank"
+  },
+  "users" : {
+    "-L4U7tTbG1hsveSV3gma" : {
+      "affiliation" : "a",
+      "age" : 4,
+      "dateCreated" : "2018-02-04T04:47:03.680Z",
+      "email" : "mark.aaron.fisher@gmail.com",
+      "gender" : "Female",
+      "giRank" : "White belt",
+      "id" : "-L4U7tTbG1hsveSV3gma",
+      "name" : "e",
+      "noGiRank" : "Advanced",
+      "paidStatus" : false,
+      "password" : "1234567",
+      "reputationPoints" : 100,
+      "uid" : "4u2X0MR1GcU9V1cDP4z2mb8Yr3y1",
+      "weight" : 123
+    }
+  },
+  "weightClasses" : {
+    "-L0pi8zhw9ghK4boZWWB" : "Rooster",
+    "-L0pi8zhw9ghK4boZWWC" : "Bantam",
+    "-L0pi8zhw9ghK4boZWWD" : "Light-feather",
+    "-L0pi8zi-JBWlbv9bmyB" : "Feather",
+    "-L0pi8zi-JBWlbv9bmyC" : "Light",
+    "-L0pi8zi-JBWlbv9bmyD" : "Middle",
+    "-L0pi8zi-JBWlbv9bmyE" : "Medium-heavy",
+    "-L0pi8zi-JBWlbv9bmyF" : "Heavy",
+    "-L0pi8zi-JBWlbv9bmyG" : "Super-heavy",
+    "-L0pi8zi-JBWlbv9bmyH" : "Ultra-heavy",
+    "-L0pi8zjaqpsbvmxzr1U" : "Absolute",
+    "-L0pi8zjaqpsbvmxzr1V" : "Add new weight class"
+  }
+}

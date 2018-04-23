@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { PointsScoredDirective } from './points-scored.directive';
 import { MyHiddenDirective } from './my-hidden.directive';
 import { D3Service } from 'd3-ng2-service';
+import { PointsDisplayComponent } from './points-display/points-display.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     PointsScoredDirective,
-    MyHiddenDirective
+    MyHiddenDirective,
+    PointsDisplayComponent
   ],
   imports: [
     BrowserModule
