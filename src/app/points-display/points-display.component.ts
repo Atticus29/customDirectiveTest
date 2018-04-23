@@ -22,10 +22,23 @@ export class PointsDisplayComponent implements OnInit {
   ngOnInit() {
     let d3 = this.d3;
     this.httpConfig.getConfig()
-      .subscribe(data => this.data = {
-        matches: data['matches']
-      });
-    console.log(this.data);
+      .subscribe(data => {
+        // let matches = data['matches'];
+        // console.log(matches);
+        // let deets = matches.values.map(entry => {
+        //   return entry.matchDeets;
+        // });
+        // console.log(deets);
+        // let tournamentNames = data['matches'].filter(entry => {
+        //   console.log(entry);
+        //   // entry.'matchDeets'
+        // });
+
+        //assume your database service takes care of filtering and mapping and returns an array of whatever (strings in our case)
+        this.data = ["rear naked choke", "rear naked choke", "rear naked choke", "flower sweep", "scissor sweep", "double leg", "armbar", "armbar", "bow-and-arrow choke", "kiumra"];
+      }
+    );
+
     let d3ParentElement: Selection<any, any, any, any>;
     if (this.parentNativeElement !== null) {
       d3ParentElement = d3.select(this.parentNativeElement); // <-- use the D3 select method
